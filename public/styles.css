@@ -1,0 +1,190 @@
+/* Import the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset default padding, margin, and box-sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f1f1; /* Light gray background for reduced visual stress */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for readability */
+    color: #333; /* Dark text color for better contrast */
+    font-size: 16px; /* Increased font size for improved readability */
+}
+
+/* Chat section styles */
+section.chat_section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Brand section styles */
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+/* Message area styles */
+.message_area {
+    height: 60vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+/* Message input form styles */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+textarea {
+    flex: 1; /* Make the textarea expand to fill available space */
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #fbfbfb; /* Off-white background for reduced glare */
+}
+
+.btn {
+    border: 2px solid #007bff; /* Change border color to match UI */
+    background-color: #007bff; /* Change background color to match UI */
+    color: #fff; /* Change text color to white */
+    border-radius: 6px;
+    padding: 10px 20px; /* Add padding for a larger button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+/* Add a hover effect for the button */
+.btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Timestamp styles */
+.timestamp {
+    font-size: 12px; /* Adjust the font size to make it smaller */
+    color: #555; /* Change the color to a more visible shade */
+    margin-top: 4px; /* Add some spacing between the message and timestamp */
+}
+
+/* Message bubble styles for outgoing and incoming messages */
+.outgoing,
+.incoming {
+    border-radius: 10px;
+    max-width: 70%; /* Adjust the maximum width of the message bubble */
+    padding: 10px; /* Add padding to the message bubble */
+}
+
+
+/* Style for outgoing messages */
+.outgoing {
+    background: #E9E9E9; /* White background for reduced visual stress */
+    color: #333; /* Dark text color for better contrast */
+    margin-left: auto;
+    min-width: 100px; /* Add a minimum width for the message bubble */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for readability */
+    font-size: 16px; /* Increased font size for improved readability */
+    padding: 10px; /* Add padding to the message bubble */
+}
+
+
+
+/* Style for incoming messages */
+.incoming {
+    background: #8f8be8;
+    color: #fff;
+    min-width: 100px; /* Add a minimum width for the message bubble */
+}
+
+/* Message content styles */
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px; /* Add a small gap between message and timestamp */
+    max-width: 70%; /* Add a maximum width for the message box */
+    word-wrap: break-word; /* Wrap long messages */
+    padding: 10px; /* Add padding to the message box */
+    background: #e9eafd; /* Background color for outgoing messages */
+    color: #787986;
+}
+
+/* Adjust timestamp color and spacing */
+.timestamp {
+    font-size: 10px; /* Adjust the font size for timestamps */
+    color: #555; /* Change the color to a more visible shade */
+    margin-top: 2px; /* Reduce the spacing between message and timestamp */
+}
+
+/* Adjust logo size and position */
+#logo {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add margin to the right of the logo */
+}
+
+/* Add space between two messages */
+.incoming,
+.outgoing {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Increase font size of message */
+.message-content p {
+    font-size: 18px; /* Adjust the font size for messages */
+}
+
+/* Accessibility controls styles */
+.accessibility-controls {
+    background: #f1f1f1;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+/* Initial styles for UI aspects controlled by accessibility settings */
+body {
+    font-size: 16px; /* Set default font size */
+    background-color: #ffffff; /* Set default background color */
+    color: #333333; /* Set default text color */
+}
+/* Accessibility controls styles */
+.accessibility-controls {
+    background: #f1f1f1;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+/* Initial styles for UI aspects controlled by accessibility settings */
+.accessibility-settings body {
+    font-size: 16px; /* Set default font size */
+    background-color: #ffffff; /* Set default background color */
+    color: #333333; /* Set default text color */
+}
+
