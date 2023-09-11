@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup - Realtime Node and Socket.io Chat Application</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="accessibility-settings">
+    <section class="chat_section">
+        <div class="brand">
+            <img src="/logo.png" alt="Wassup logo" id="logo">
+            <h1>Chatterbox</h1>
+        </div>
+        <div class="message_area">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div>
+            <!-- Message input form -->
+            <form id="message-form">
+                <textarea id="textarea" cols="30" rows="1" placeholder="Write a message."></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <div class="accessibility-controls">
+        <h2>Accessibility Settings</h2>
+        <label for="font-size">Font Size:</label>
+        <input type="range" id="font-size" min="12" max="24" step="2" value="16">
+        <br>
+        <label for="bg-color">Background Color:</label>
+        <input type="color" id="bg-color" value="#ffffff">
+        <br>
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" value="#333333">
+        <br>
+        <label for="chat-section-color">Chat Section Color:</label>
+        <input type="color" id="chat-section-color" value="#fff">
+        <br>
+        <button id="reset-accessibility">Reset Defaults</button>
+    </div>
+    
+    <!-- JavaScript dependencies for Socket.io and client-side logic -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
